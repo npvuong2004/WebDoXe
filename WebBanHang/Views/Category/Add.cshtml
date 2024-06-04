@@ -1,0 +1,23 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model Category
+<form asp-action="Add" method="post">
+    <h2>Add Category</h2>
+    <hr />
+    <div class="form-group">
+        <label>Tên</label>
+        <input asp-for="Tên" class="form-control" />
+        <span asp-validation-for="Tên" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label>Display Order</label>
+        <input asp-for="Thứ tự hiển thị" class="form-control" />
+        <span asp-validation-for="Thứ tự hiển thị" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary"> Lưu </button>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</form>
