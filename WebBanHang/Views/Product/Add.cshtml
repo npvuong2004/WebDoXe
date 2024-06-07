@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="form-group pb-2">
-                <label>Name</label>
+                <label>Tên</label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
@@ -15,7 +15,7 @@
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group pb-2">
-                <label>Price</label>
+                <label>Giá bán</label>
                 <input asp-for="Price" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
@@ -29,11 +29,11 @@
                 <span asp-validation-for="CategoryId" class="text-danger"></span>
             </div>
             <div class="form-group pb-2">
-                <label>Product Image</label>
+                <label>Product Hình ảnh</label>
                 <input asp-for="ImageUrl" type="file" class="form-control" />
             </div>
         </div>
     </div>
-    <button type="submit" class="btn btn-primary"> Save </button>
-    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    <button type="submit" class="btn btn-primary"> Lưu </button>
+    <a asp-action="Index" class="btn btn-secondary">Trở về danh sách</a>
 </form>

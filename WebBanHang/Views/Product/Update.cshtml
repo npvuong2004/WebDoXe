@@ -13,7 +13,7 @@
         </div>
         <div class="col-md-8">
             <div class="form-group pb-2">
-                <label>Name</label>
+                <label>Tên</label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
@@ -23,7 +23,7 @@
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group pb-2">
-                <label>Price</label>
+                <label>Giá bán</label>
                 <input asp-for="Price" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
@@ -37,11 +37,31 @@
                 <span asp-validation-for="CategoryId" class="text-danger"></span>
             </div>
             <div class="form-group pb-2">
-                <label>Product Image</label>
+                <label>Product Hình ảnh</label>
                 <input asp-for="ImageUrl" type="file" class="form-control" />
             </div>
-            <button type="submit" class="btn btn-primary"> Update </button>
-            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            <button type="submit" class="btn btn-primary"> Cập nhật </button>
+            <a asp-action="Index" class="btn btn-secondary">Trở về danh sách</a>
         </div>
     </div>
 </form>
+
+@section Scripts{
+<partial name="_ValidationScriptsPartial"/>
+
+    <script>
+        document.querySelectorAll('input[type="file"]').forEach(input => {
+            input.addEventListener('change', function (event) {
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        const img = document.getElementById("previewImage");
+                        img.src = e.target.result;
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+        });
+    </script>
+}
