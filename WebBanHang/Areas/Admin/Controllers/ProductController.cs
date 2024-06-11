@@ -50,7 +50,7 @@ namespace WebBanHang.Controllers
 
         //Xử lý thêm sản phẩm
         [HttpPost]
-public IActionResult Add(Product product, IFormFile ImageUrl)
+        public IActionResult Add(Product product, IFormFile ImageUrl)
         {
             if (ModelState.IsValid) //kiem tra hop le
             {
