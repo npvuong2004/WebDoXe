@@ -54,7 +54,7 @@ namespace WebBanHang
             {
                 endpoints.MapControllerRoute(
                   name: "areas",
-                  pattern: "{area=Admin}/{controller=Category}/{action=Index}/{id?}"
+                  pattern: "{area=KhachHang}/{controller=Home}/{action=Index}/{id?}"
                 );
             });
         }
