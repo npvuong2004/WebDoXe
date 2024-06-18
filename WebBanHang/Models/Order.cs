@@ -12,7 +12,7 @@ namespace WebBanHang.Models
         public string KhachHangName { get; set; }
         public string Address { get; set; }
         public string Phone { get; set; }
-        public string Total { get; set; }
+        public double Total { get; set; }
         public string State { get; set; }
 
     }
