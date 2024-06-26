@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebBanHang.Models;
 
-namespace WebBanHang.Migrations
+namespace WebXeDo.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -43,19 +43,19 @@ namespace WebBanHang.Migrations
                         {
                             Id = 1,
                             DisplayOrder = 1,
-                            Name = "Điện thoại"
+                            Name = "Yamaha"
                         },
                         new
                         {
                             Id = 2,
                             DisplayOrder = 2,
-                            Name = "Máy tính bảng"
+                            Name = "Honda"
                         },
                         new
                         {
                             Id = 3,
                             DisplayOrder = 3,
-                            Name = "Laptop"
+                            Name = "Suzuki"
                         });
                 });
 
@@ -81,8 +81,8 @@ namespace WebBanHang.Migrations
                     b.Property<string>("State")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Total")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<double>("Total")
+                        .HasColumnType("float");
 
                     b.HasKey("Id");
 
@@ -149,84 +149,140 @@ namespace WebBanHang.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            Name = "Iphone 7",
+                            Name = "Exciter 135 62zz",
                             Price = 300.0
                         },
                         new
                         {
                             Id = 2,
                             CategoryId = 1,
-                            Name = "Iphone 7s",
+                            Name = "Exciter 135 65zz",
                             Price = 350.0
                         },
                         new
                         {
                             Id = 3,
                             CategoryId = 1,
-                            Name = "Iphone 8",
+                            Name = "Exciter 135 68zz",
                             Price = 400.0
                         },
                         new
                         {
                             Id = 4,
                             CategoryId = 1,
-                            Name = "Iphone 8s",
+                            Name = "Exciter 135 72+4",
                             Price = 420.0
                         },
                         new
                         {
                             Id = 5,
                             CategoryId = 1,
-                            Name = "Iphone 12",
+                            Name = "Exciter 150 62zz",
                             Price = 630.0
                         },
                         new
                         {
                             Id = 6,
                             CategoryId = 1,
-                            Name = "Iphone 12 Pro",
+                            Name = "Exciter 150 65zz",
                             Price = 750.0
                         },
                         new
                         {
                             Id = 7,
                             CategoryId = 1,
-                            Name = "Iphone 14",
+                            Name = "Exciter 150 72z6",
                             Price = 820.0
                         },
                         new
                         {
                             Id = 8,
                             CategoryId = 1,
-                            Name = "Iphone 14 Pro",
+                            Name = "Exciter 150 68z8",
                             Price = 950.0
                         },
                         new
                         {
                             Id = 9,
-                            CategoryId = 1,
-                            Name = "Iphone 15",
+                            CategoryId = 2,
+                            Name = "Winner V1 62zz",
                             Price = 1200.0
                         },
                         new
                         {
                             Id = 10,
-                            CategoryId = 1,
-                            Name = "Iphone 15 Pro Max ",
+                            CategoryId = 2,
+                            Name = "Winner V1 65zz ",
                             Price = 1450.0
                         },
                         new
                         {
                             Id = 11,
                             CategoryId = 2,
-                            Name = "Ipad Gen 10",
+                            Name = "Winner X v1 68z6",
                             Price = 750.0
                         },
                         new
                         {
                             Id = 12,
                             CategoryId = 2,
-                            Name = "Ipad Pro 11",
+                            Name = "Winner X v2 65zz",
+                            Price = 1250.0
+                        },
+                        new
+                        {
+                            Id = 13,
+                            CategoryId = 2,
+                            Name = "Winner X v2 68zz",
+                            Price = 1250.0
+                        },
+                        new
+                        {
+                            Id = 14,
+                            CategoryId = 2,
+                            Name = "Winner X v1 65zz",
+                            Price = 1250.0
+                        },
+                        new
+                        {
+                            Id = 15,
+                            CategoryId = 2,
+                            Name = "Winner V1 65zz",
+                            Price = 1250.0
+                        },
+                        new
+                        {
+                            Id = 16,
+                            CategoryId = 2,
+                            Name = "Winner V1 74z8",
+                            Price = 1250.0
+                        },
+                        new
+                        {
+                            Id = 17,
+                            CategoryId = 3,
+                            Name = "Raider xc 62zz",
+                            Price = 1250.0
+                        },
+                        new
+                        {
+                            Id = 18,
+                            CategoryId = 3,
+                            Name = "Raider 150 68zz",
+                            Price = 1250.0
+                        },
+                        new
+                        {
+                            Id = 19,
+                            CategoryId = 3,
+                            Name = "Satria 68zz",
+                            Price = 1250.0
+                        },
+                        new
+                        {
+                            Id = 20,
+                            CategoryId = 3,
+                            Name = "Satria 71z4",
                             Price = 1250.0
                         });
                 });
